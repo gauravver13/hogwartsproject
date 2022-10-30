@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Merriweather&family=Montserrat&family=Sacramento&family=Source+Sans+Pro:wght@600&family=Square+Peg&family=Tapestry&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font: 1.5rem;
+    min-height: 100vh;
+    background-color: #FFF5E4;
+    color: #7D6E83;
+    background-image: radial-gradient(whitesmoke,#FFF5E4);
+    display: flex;
+    flex-direction: column;
+}
+
+
+header,nav,main,footer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header,footer{
+    position: sticky;
+    background-color: #DFD3C3;
+}
+header{
+    top: 0;
+}
+
+nav{
+    background-color: #D0B8A8;
+    display: flex;
+    border: 2px solid #DFD3C3;
+    justify-content: space-evenly;
+    padding: 0.2rem;
+    margin: 0px 0px 1px 0px;
+    font-weight: 900;
+}
+
+nav a,nav a:visited{
+    color: #7D6E83;
+    text-decoration: none;
+}
+nav a:hover{
+    color: brown;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+    padding: 1rem;
+}
+
+footer{
+    bottom: 0; 
+}
+
+.card{
+    background-color: #D0B8A8;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 4rem;
+    align-items: center;
+    scroll-margin-top: 8rem;
+    width: min(100%,568px);
+    border: 2px solid  #7D6E83 ;
+}
+
+.card figure{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card img{
+    border: 3px double  #7D6E83;
+    border-radius: 50%;
+}
+
+.card figcaption{
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+/* @media screen and (min-width:576px) {
+    
+} */
